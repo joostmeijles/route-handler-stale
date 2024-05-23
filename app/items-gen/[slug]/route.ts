@@ -10,5 +10,5 @@ export async function GET(
 }
 
 export async function generateStaticParams() {
-    return ['a'];
+    return [{slug: 'a'}];
 }

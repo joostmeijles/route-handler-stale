@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 
+export const revalidate = 30;
 export const dynamic = 'force-static';
 
 export async function GET(
@@ -9,8 +10,4 @@ export async function GET(
     const slug = params.slug // 'a', 'b', or 'c'
 
     return NextResponse.json({ slug })
-}
-
-export async function generateStaticParams() {
-    return [];
 }

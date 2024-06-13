@@ -11,3 +11,7 @@ export async function GET(
 
     return NextResponse.json({ slug })
 }
+
+export async function generateStaticParams() {
+    return [];
+}

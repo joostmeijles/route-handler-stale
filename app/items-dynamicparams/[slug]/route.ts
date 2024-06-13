@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export const dynamicParams = false;
+export const dynamicParams = 'force-static';
 
 export async function GET(
     request: Request,
